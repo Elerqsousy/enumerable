@@ -11,4 +11,9 @@ module MyEnumerable
     result
     end
 
+    def filter 
+      result = []
+      each {|e| result << e if yield e }
+    result
+    end 
 end
